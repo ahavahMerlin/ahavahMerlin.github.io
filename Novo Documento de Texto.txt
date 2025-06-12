@@ -1487,12 +1487,13 @@ git commit -m "Commit inicial"
 git push -u origin main
 
 https://ahavahMerlin.github.io/formulario.html
+https://ahavahMerlin.github.io/teste.html
 
 git remote -v
 https://github.com/ahavahMerlin/ahavahMerlin.github.io
 C:\Users\venda\OneDrive\Documentos\GitHub\ahavahMerlin.github.io
 
-
+chrome://settings/clearBrowserData
 
 Obtenha o URL do seu arquivo formulario.html hospedado. Por exemplo, https://seusite.netlify.app/formulario.html.
 No Google Sites:
