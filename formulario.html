@@ -20,6 +20,14 @@
         <!-- Dados do Solicitante -->
         <fieldset>
             <legend>Dados do Solicitante</legend>
+            
+            <label for="soliciante_anuncio">Você é Solicitante de Anúncio Sim ou 
+			Não:</label><br>
+            <input type="text" id="soliciante_anuncio" name="soliciante_anuncio" required aria-required="true" placeholder="Sim ou Não"><br><br>
+            
+            <label for="soliciante_aplicativo">Você é Solicitante de Aplicativo</label><label for="soliciante_anuncio"> 
+			Sim ou Não</label><label for="soliciante_aplicativo">:</label><br>
+            <input type="text" id="ssoliciante_aplicativo" name="ssoliciante_aplicativo" required aria-required="true" placeholder="Sim ou Não"><br><br>
 
             <label for="nome_negocio">Nome do Negócio do Solicitante (Empresa):</label><br>
             <input type="text" id="nome_negocio" name="nome_negocio" required aria-required="true" placeholder="Nome da Empresa"><br><br>
@@ -105,9 +113,6 @@
              <label for="email_solicitante">E-mail Válido do Solicitante:</label><br>
             <input type="email" id="email_solicitante" name="email_solicitante" required aria-required="true" placeholder="E-mail Principal"><br><br>
 
-            <label for="email_pagseguro">E-mail para PagSeguro ou outro:</label><br>
-            <input type="email" id="email_pagseguro" name="email_pagseguro" placeholder="E-mail para recebimento de pagamentos"><br><br>
-
             <label for="comissao">Percentual Comissão Anunciante:</label><br>
             <input type="number" id="comissao" name="comissao" min="0" max="100" placeholder="Porcentagem de Comissão"><br><br>
 
@@ -123,7 +128,7 @@
 
         <!-- Dados do Captador/Indicador -->
         <fieldset>
-            <legend>Dados do Captador/Indicador (Opcional)</legend>
+            <legend>Dados do Captador/Indicador</legend>
 
             <label for="nome_captador">Nome Captador/Indicador:</label><br>
             <input type="text" id="nome_captador" name="nome_captador" placeholder="Nome do Captador/Indicador"><br><br>
