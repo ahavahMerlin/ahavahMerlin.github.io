@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulário de Anúncio</title>
+</head>
+<body>
+
+    <h2>Formulário de Solicitação de Anúncio, Indicação e Aplicativo Mobile</h2>
+    <p>Preencha o formulário abaixo para solicitar um anúncio em nosso site.</p>
+
+    <form action="https://formsubmit.co/vendamais@gmail.com" method="POST" enctype="multipart/form-data">
+
+        <label for="nome_negocio">Nome do Negócio do Solicitante (Empresa):</label><br>
+        <input type="text" id="nome_negocio" name="nome_negocio" required><br><br>
+
+        <label for="cpf_cnpj">CPF / CGC Solicitante:</label><br>
+        <input type="text" id="cpf_cnpj" name="cpf_cnpj" required><br><br>
+
+        <label for="logo">Imagem Logo do Solicitante:</label><br>
+        <input type="file" id="logo" name="logo" accept="image/*"><br><br>
+
+        <label for="url_negocio">URL (Site, Facebook, Instagram, Blog ...) do Negócio:</label><br>
+        <input type="url" id="url_negocio" name="url_negocio"><br><br>
+
+        <label>Endereço:</label><br>
+        <label for="endereco">Endereço e Número:</label>
+        <input type="text" id="endereco" name="endereco" required><br>
+        <label for="bairro">Bairro:</label>
+        <input type="text" id="bairro" name="bairro" required><br>
+        <label for="cep">CEP:</label>
+        <input type="text" id="cep" name="cep" required><br>
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" name="cidade" required><br>
+        <label for="estado">Estado:</label>
+        <select id="estado" name="estado" required>
+            <option value="">Selecione o Estado</option>
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+        </select><br><br>
+
+        <label>Telefones:</label><br>
+        <label for="tel_fixo">Tel Fixo:</label>
+        <input type="tel" id="tel_fixo" name="tel_fixo"><br>
+        <label for="celular">Celular/Whats:</label>
+        <input type="tel" id="celular" name="celular" required><br>
+        <label for="tel_principal">Tel Principal:</label>
+        <input type="tel" id="tel_principal" name="tel_principal"><br><br>
+
+        <label for="horarios">Horários de Funcionamento e Dias:</label><br>
+        <textarea id="horarios" name="horarios" rows="4" cols="50"></textarea><br><br>
+
+        <label for="email_pagseguro">E-mail Solicitante PagSeguro ou outro:</label><br>
+        <input type="email" id="email_pagseguro" name="email_pagseguro"><br><br>
+
+        <label for="comissao">Percentual Comissão Anunciante:</label><br>
+        <input type="number" id="comissao" name="comissao" min="0" max="100"><br><br>
+
+        <label for="imagem_banner">Outra imagem do Solicitante (Cartão ou Banner):</label><br>
+        <input type="file" id="imagem_banner" name="imagem_banner" accept="image/*"><br><br>
+
+        <label for="nome_captador">Nome Captador:</label><br>
+        <input type="text" id="nome_captador" name="nome_captador"><br><br>
+
+        <label for="email_captador">E-mail Captador:</label><br>
+        <input type="email" id="email_captador" name="email_captador"><br><br>
+
+        <!-- Campos ocultos para FormSubmit -->
+        <input type="hidden" name="_next" value="https://sites.google.com/view/rendaextradebocaembocai">  <!-- URL de redirecionamento após o envio -->
+        <input type="hidden" name="_subject" value="Nova Solicitação de Anúncio"> <!-- Assunto do e-mail -->
+        <input type="hidden" name="_captcha" value="false"> <!-- Desativa o captcha -->
+
+        <input type="submit" value="Enviar Solicitação">
+    </form>
+
+</body>
+</html>
