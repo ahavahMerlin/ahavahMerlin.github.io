@@ -1,10 +1,49 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Solicitacao de Anuncio e ou Aplicativo Mobile, Captacao e ou Indicacao</title>
+<!-- Scripts -->
+    <script language='JavaScript'>
+        // Bloqueador de Selecao - iceBreaker http://www.icebreaker.com.br/
+        function bloquear(e) {
+            return false
+        }
+
+        function desbloquear() {
+            return true
+        }
+        document.onselectstart = new Function("return false")
+        if (window.sidebar) {
+            document.onmousedown = bloquear
+            document.onclick = desbloquear
+        }
+    </script>
+    <script language='JavaScript'>
+        // Bloqueador de Bot√£o Direito - iceBreaker http://www.icebreaker.com.br/
+        function clique() {
+            if (event.button == 2 || event.button == 3) {
+                oncontextmenu = 'return false'
+            };
+        }
+        document.onmousedown = clique
+        document.oncontextmenu = new Function("return false;")
+    </script>
+    <script language='JavaScript'>
+        // Bloqueador de Tecla CTRL - iceBreaker http://www.icebreaker.com.br/
+        function checartecla(evt) {
+            if (evt.keyCode == '17') {
+                alert("Comando Desativado")
+                return false
+            }
+            return true
+        }
+    </script>
 </head>
-<body>
+
+<body onselectstart='return false' oncontextmenu='return false' ondragstart='return false' onkeydown='return checartecla(event)'>
+
 
     <h2>Formulario de Solicitacao de Anuncio e ou Aplicativo Mobile, Captacao e ou Indicacao</h2>
     <p>Preencha o formulario abaixo para:</p>
@@ -40,7 +79,7 @@
             <input type="url" id="url_negocio" name="url_negocio" placeholder="URL do Site/Facebook/Instagram"><br><br>
         </fieldset>
 
-        <!-- EndereÁo -->
+        <!-- Endere√ßo -->
         <fieldset>
             <legend>Endereco</legend>
 
@@ -101,7 +140,7 @@
 
         </fieldset>
 
-        <!-- Outras InformaÁıes -->
+        <!-- Outras Informa√ß√µes -->
         <fieldset>
             <legend>Outras Informacoes</legend>
 
@@ -155,4 +194,5 @@
     </form>
 
 </body>
+
 </html>
